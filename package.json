@@ -3,9 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@openzeppelin/contracts": "^5.0.2",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "framer-motion": "^11.3.31",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
@@ -15,7 +20,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "node scripts/deployRoboPunksNFT.js"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +40,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@types/sinon-chai": "^3.2.3",
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.22.9",
+    "tailwindcss": "^3.4.10"
   }
 }
